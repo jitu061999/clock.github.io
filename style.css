@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+#clockContainer{
+    position: relative;
+    background-color:red;
+    height:40vw;
+    width:40vw;
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+    margin: auto;
+    
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+   /* background-image: linear-gradient(rgb(231, 130, 231),yellow,rgb(80, 118, 139));
+    background-repeat: no-repeat;
+*/
+background-color: rgb(217, 233, 146);
+}
+
+h1{
+    text-align: center;
+    color: rgb(238, 61, 61);
+    border-radius: 12px;
+    border:2px solid black;
+    width:13%;
+    padding: 3px; 
+    margin:auto;
+}
+h1:hover{
+    color:black;
+    border:3px solid rgb(245, 83, 83);
+}
+#hour,#minute ,#second{
+    position: absolute;
+    background: black;
+    border-radius:12px;
+    transform-origin:bottom;
+}
+
+#hour{
+   width:1.7%;
+   height:22%;
+   left:49%;
+   top:27.5%;
+   
+}
+#minute{
+    width:1.4%;
+   height:28%;
+   left:49.15%;
+   top:21%;
+ opacity: 0.8;
+}
+#second{
+    width:1%;
+   height:35%;
+   left:49.38%;
+   top:15%;
+   opacity: 0.8;
+}
+
+.intro h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(226, 12, 12);
+}
+.intro h2:hover{
+    color:black;
+    border:3px solid rgb(235, 35, 35); 
+    border-radius: 10px;
+    width:30%;
+    margin:auto;
+    padding: 4px;
+}
+@media only screen and (max-width: 1100px) {
+    body{
+    height:600px;
+    }
+    h1{
+        width:60%;
+        padding: 4px; 
+    }
+
+    .intro h2{
+        font-size: 20px;
+        
+    }
+
+    .intro h2:hover{
+        width:90%;
+    }
+    #clockContainer{
+        height:80vw;
+        width:80vw;  
+    }
+    
+}
